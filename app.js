@@ -1,5 +1,4 @@
 window.addEventListener("load", ()=> {
-
     //Setting Up day and date (header section)
     const d = new Date()
 
@@ -40,7 +39,7 @@ window.addEventListener("load", ()=> {
         leftText2.textContent = results[0].multimedia[0].caption
         leftLink.href = results[0].url
         leftImg.src = results[0].multimedia[0].url
-    
+
 
         //Right Section
         const rightHeading = document.querySelector("#container-right-body-heading")
@@ -55,5 +54,4 @@ window.addEventListener("load", ()=> {
         rightLink.href = results[1].url
         rightImg.src = results[1].multimedia[0].url
     })   
-
 })
