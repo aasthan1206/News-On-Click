@@ -1,4 +1,7 @@
 window.addEventListener("load", ()=> {
+
+    // Home section
+
     //Setting Up day and date (header section)
     const d = new Date()
 
@@ -54,4 +57,39 @@ window.addEventListener("load", ()=> {
         rightLink.href = results[1].url
         rightImg.src = results[1].multimedia[0].url
     })   
+
+    // Arts Page
+    const arts = document.querySelector(".arts")
+    arts.addEventListener("click", loadArtsNews)
+    function loadArtsNews() {
+        window.location.href = ("arts.html")
+    }
+
+    // Business Page
+    const business = document.querySelector(".business")
+    business.addEventListener("click", loadBusinessNews)
+    function loadBusinessNews() {
+        window.location.href = ("business.html")
+    }
+
+    // Science Page
+    const science = document.querySelector(".science")
+    science.addEventListener("click", loadScienceNews)
+    function loadScienceNews() {
+        window.location.href = ("science.html")
+    }
+
+    // US Page
+    const us = document.querySelector(".us")
+    us.addEventListener("click", loadUsNews)
+    function loadUsNews() {
+        window.location.href = ("us.html")
+    }
+
+    // World Page
+    const world = document.querySelector(".world")
+    world.addEventListener("click", loadWorldNews)
+    function loadWorldNews() {
+        window.location.href = ("world.html")
+    }
 })
